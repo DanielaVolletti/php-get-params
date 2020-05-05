@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!-- passo come argomenti in GET nome e cognome -->
     <?php
     $nome = $_GET['nome'];
     $cognome = $_GET['cognome'];
      ?>
   </head>
   <body>
-    <!-- passare come argomenti in GET nome e cognome; e salutare l'interlocutore -->
+    <!-- saluto l'interlocutore -->
+    <!-- esempio url : http://localhost:81/?nome=mioNome&cognome=mioCognome -->
     <h1><?php
     echo "Ciao " . $nome . " " . $cognome;
      ?></h1>

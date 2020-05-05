@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!-- passo come argomenti in GET mail -->
     <?php
     $mail = $_GET['mail'];
     $mailPunto = strpos($mail, '.');
@@ -10,7 +11,8 @@
     ?>
   </head>
   <body>
-    <!-- passare come argomento in GET una mail e stampare un div che contenga OK se contiene un punto e una chiocciola; KO altrimenti -->
+    <!-- stampo un div che contenga OK se contiene un punto e una chiocciola; KO altrimenti -->
+    <!-- esempio url : http://localhost:81/?mail=mia@mail.it -->
     <div class="">
       <?php
         if($mailPunto && $mailChiocciola){
